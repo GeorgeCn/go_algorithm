@@ -1,4 +1,4 @@
-package main
+package answers
 
 import "fmt"
 
@@ -39,7 +39,7 @@ func longestPalindrome(s string) string {
                // 判断字串是否是回文字串
 
                pal := palindrome(s[preindex:index+1])
-fmt.Println(pal)
+
                if len(pal) < 3 {
                    if  len(pal) == 2{
                        if pal[0] != pal[1] {
@@ -64,7 +64,6 @@ fmt.Println(pal)
 }
 
 func palindrome (s string) string {
-    fmt.Println(222, s)
     n := len(s)
 
     if n <= 2 {
@@ -80,7 +79,7 @@ func palindrome (s string) string {
             palindrome(temp)
         }
     }
-fmt.Println(111,temp)
+
     return temp
 }
 

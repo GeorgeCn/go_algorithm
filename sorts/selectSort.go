@@ -4,11 +4,11 @@ import "fmt"
 
 func main()  {
     arr := []int{51,46,20,18,65,97,82,30,77,50,2,33,12,100}
-    fmt.Println("冒泡排序前：", arr)
+    fmt.Println("选择排序前：", arr)
 
     selectSort(arr)
 
-    fmt.Println("冒泡排序后：", arr)
+    fmt.Println("选择排序后：", arr)
 }
 
 func selectSort(arr []int) []int {
